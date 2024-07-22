@@ -1,0 +1,131 @@
+body, html, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width:290px;
+    height:50px;
+    margin-top: 100px;
+}
+.login{
+    width:100%;
+    max-width:400px;
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid gray;
+    border-radius: 35px;
+}
+
+.login_top {
+    width:90%;
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid rgb(233, 203, 203);
+}
+
+.login_top li {
+    margin: 0 10px; /* 리스트 아이템 간격 조정 */
+}
+
+.login_top li a{
+    color:rgb(135, 125, 125);
+    text-decoration: none;
+}
+
+.login_top li :hover{
+    color:rgb(228, 169, 59);
+}
+
+.login_input{
+    width:90%;
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.login_id #id{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.login_pw #pw{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.login_bottom{
+    display:flex;
+    list-style: none;
+}
+
+.login_bottom a{
+    text-decoration: none;
+    color:rgb(172, 172, 252);
+    margin: 0 10px;
+    font-size:13px;
+}
+
+.login_bottom li :hover{
+    color:rgb(228, 169, 59);
+}
+.bottom{
+    padding-top: 20px;
+    display:flex;
+    list-style: none;
+}
+
+.bottom a{
+    text-decoration: none;
+    color:rgb(172, 172, 252);
+    margin: 0 10px;
+    font-size:13px;
+}
+
+.bottom li :hover{
+    color:rgb(228, 169, 59);
+}
+
+button{
+    background: skyblue;
+    border-color: skyblue;
+}
+
+.footer{
+    position: absolute;
+    bottom:32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
