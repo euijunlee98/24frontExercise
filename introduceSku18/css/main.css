@@ -23,7 +23,9 @@
     margin:0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: 'Roboto', sans-serif;
+}
 header{
     display: flex;
     align-items: center;
@@ -79,12 +81,16 @@ header .icons svg{
 }
 
 .profile .line1 li{
-    
-    margin-right:30px;
     font-size: 30px;
     margin-top:20px;
     font-weight: lighter;
     color: var(--white-color);
+}
+
+.profile .line1 .name{
+    margin-left:10px;
+    font-weight:400;
+    margin-right: 20px;
 }
 
 .profile .line1 button{
@@ -147,27 +153,39 @@ header .icons svg{
 .menu li{
     margin-top: 12px;
     margin-bottom: 12px;
-    
+    width:70px;
+    background-color: #b4cef1;
+    border: 1px solid #b6d4fa;
+    border-radius: 15px;
 }
 
 .menu li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: rgb(64, 63, 63);
+    height: 100%;
 }
 
-.menu li a:hover{
-    background-color: var(--grey-light-color);
-    border-radius: 4px;
+.menu :hover{
+    background-color: var(--white-color);
+    color:#b6d4fa;
+    border-radius: 15px;
 }
 
 .img{
     width:100%;
+    height:400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top:50px;
+    box-sizing: border-box;
 }
+
+
 .img svg{
-    margin-top:100px;
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
 }
