@@ -19,44 +19,232 @@
 }
 
 *{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Roboto', sans-serif;
-}
-img{
-    width:300px;
-    height:400px;
-    border: 1px solid var(--grey-dark-color);
-    border-radius: 15px;
+    margin: 0px;
+    padding: 0px;
 }
 
-div {
+header{
     display: flex;
     padding: var(--padding);
-    border: 1px solid var(--grey-dark-color);
+    
 }
 
+header .logo{
+    padding: var(--padding);
+    font-size: 40px;
+    color: var(--blue-color);
+}
 
-div >ul{
-    margin-top:200px;
+#bars{
+    padding: var(--padding);
+    font-size: 20px;
+    margin-top: 12px;
+    color: var(--grey-dark-color);
+}
+
+header .title{
+    padding-top: 12px;
     display: flex;
     flex-direction: column;
+}
+header .title .big{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Gungsuh', 'Gungseo', 'AppleMyungjo', serif;
+}
+header .title .small{
+    margin-top:5px;
+    color: var(--grey-dark-color);
+    font-size: var(--font-small);
+}
+
+header .search{
+    padding: 24px;
+    margin-left: 100px;
+}
+
+header .search i{
+    font-size: var(--font-large);
+}
+
+header .search input{
+    height: 28px;
+    width: 300px;
+}
+
+.members{
+    padding: var(--padding);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.members .member{
+    margin-top: var(--padding);
+    padding: var(--padding);
     border: 1px solid var(--grey-light-color);
-    border-radius: 15px;
-    height:200px;
+    border-radius: 7px;
+    display: flex;
+    flex: 1 1 300px;
 }
 
-div ul ul{
-    display:flex;
-    margin-right: 5px;
+.members .member img{
+    width: 150px;
+    height: 200px;
+    border-radius: 7px;
+}
+
+.members .member .detail {
     list-style: none;
-    margin-top: 7px;
+    margin-top: 135px;
+    margin-left: 20px;
 }
 
-div li{
-    margin: 0px 7px;
+.members .member .detail li{
+    margin-bottom: 3px;
 }
 
+:root{
+    /* Color */
+    --white-color: #fff;
+    --black-color: #140a00;
+    --blue-color: #045fd4;
+    --red-color: #ff0000;
+    --grey-dark-color: #909090;
+    --grey-light-color: #e0e0e0;
+    --license-border-color: #1c5b9b; /* 면허증의 테두리 색상 */
+    --license-bg-color: #eaeef3; /* 면허증 배경 색상 */
+ 
+    /* Size */
+    --padding: 12px;
+    --avatar-size: 36px;
+
+    /* Font Size */
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--grey-light-color);
+}
+
+header {
+    display: flex;
+    padding: var(--padding);
+    align-items: center;
+}
+
+header .logo {
+    padding: var(--padding);
+    font-size: 40px;
+    color: var(--blue-color);
+}
+
+#bars {
+    padding: var(--padding);
+    font-size: 20px;
+    margin-top: 12px;
+    color: var(--grey-dark-color);
+}
+
+header .title {
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+header .title .big {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Gungsuh', 'Gungseo', 'AppleMyungjo', serif;
+}
+
+header .title .small {
+    margin-top: 5px;
+    color: var(--grey-dark-color);
+    font-size: var(--font-small);
+}
+
+header .search {
+    padding: 24px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+header .search i {
+    font-size: var(--font-large);
+}
+
+header .search input {
+    height: 28px;
+    width: 300px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border: 1px solid var(--grey-light-color);
+    border-radius: 5px;
+}
+
+.members {
+    padding: var(--padding);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.members .member {
+    background-color: var(--license-bg-color);
+    padding: var(--padding);
+    border: 2px solid var(--license-border-color); /* 운전면허증 테두리 */
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    width: 350px; /* 면허증의 고정 크기 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 약간의 그림자 */
+    position: relative;
+}
+
+.members .member img {
+    width: 100px; /* 면허증 사진 크기 */
+    height: 130px;
+    border-radius: 5px;
+}
+
+.members .member .detail {
+    list-style: none;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: var(--font-medium);
+}
+
+.members .member .detail .name {
+    font-weight: bold;
+    font-size: var(--font-large);
+}
+
+.members .member .detail .birth, .members .member .detail .sex {
+    color: var(--grey-dark-color);
+}
+
+/* 운전면허증 상단 바 */
+.members .member::before {
+    content: "대한민국 운전면허증";
+    position: absolute;
+    top: -12px;
+    left: 12px;
+    font-size: var(--font-small);
+    background-color: var(--license-border-color);
+    color: var(--white-color);
+    padding: 2px 8px;
+    border-radius: 5px;
+}
